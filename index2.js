@@ -77,7 +77,7 @@ function displayWeatherCondition(response) {
     "src",
     "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png"
   );
-}
+
 function searchCurrentCity(city) {
   let apiKey = "1480f129aeb5599f48231386eca5a274";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -97,4 +97,4 @@ function getCurrentLocation(event) {
 
 let currentLocation = document.querySelector("#current-button");
 
-currentLocation.addEventListener("click", getCurrentLocation);
+  currentLocation.addEventListener("click", getCurrentLocation);
