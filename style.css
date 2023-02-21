@@ -95,6 +95,7 @@ hr {
   font-weight: 300;
   transition: 0.2s ease-out;
   box-shadow: rgba(255, 255, 255, 0.3);
+  margin-left: 20%;
 }
 .btn :hover {
   cursor: pointer;
@@ -111,8 +112,11 @@ hr {
   font-weight: 300;
   transition: 0.2s ease-out;
   box-shadow: rgba(255, 255, 255, 0.3);
-  margin-left: 2%;
+  margin-left: 1%;
 }
 .current-location :hover {
   cursor: pointer;
+}
+.source {
+  text-align: center;
 }
