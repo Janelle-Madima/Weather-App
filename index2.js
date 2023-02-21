@@ -94,7 +94,6 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchPosition);
 }
-
 let currentLocation = document.querySelector("#current-button");
 
-  currentLocation.addEventListener("click", getCurrentLocation);
+currentLocation.addEventListener("click", getCurrentLocation);
