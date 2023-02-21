@@ -69,8 +69,8 @@ function displayWeatherCondition(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  // document.querySelector("#description").innerHTML =
-  //   response.data.weather[0].description;
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].description;
 }
 function searchCurrentCity(city) {
   let apiKey = "1480f129aeb5599f48231386eca5a274";
