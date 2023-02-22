@@ -34,6 +34,7 @@ function searchCity(event) {
   let cityInput = document.querySelector("#city-input");
   let city = document.querySelector("#city");
   city.innerHTML = `${cityInput.value}`;
+  searchCurrentCity(cityInput.value);
 }
 
 let cityForm = document.querySelector("#search-form");
