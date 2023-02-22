@@ -79,6 +79,7 @@ function displayWeatherCondition(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
+
 function searchCurrentCity(city) {
   let apiKey = "46d4b1d6f90b68211c09b44671cd24f2";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
