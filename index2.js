@@ -76,7 +76,7 @@ function displayWeatherCondition(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
-    "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png"
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
 function searchCurrentCity(city) {
