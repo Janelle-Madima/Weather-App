@@ -49,9 +49,13 @@
         />
       </form>
       <h1 id="city">Gauteng, Johannesburg</h1>
-      <h4><span id="date">Last Updated: </span></h4>
+      <h4 id="date">Last Updated:</h4>
       <h4 id="description">Rain</h4>
-      <img src="https://via.placeholder.com/150" alt="weather icon" id="icon" />
+      <img
+        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png"
+        alt="weather icon"
+        id="icon"
+      />
       <div class="float-left">
         <strong id="temperature">19</strong>
         <span class="units">

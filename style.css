@@ -130,3 +130,7 @@ hr {
 .source {
   text-align: center;
 }
+img {
+  padding: 0%;
+  margin: auto;
+}
