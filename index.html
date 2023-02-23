@@ -43,7 +43,7 @@
         <input type="submit" value="Search" class="btn btn-primary shadow-sm" />
         <input
           type="button"
-          value="Current City"
+          value="GPS"
           class="current-location"
           id="current-button"
         />
@@ -52,8 +52,8 @@
       <h4>Last Updated: <span id="date"></span></h4>
       <h4 id="description">Rain</h4>
       <img
-        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png"
-        alt="🌧️"
+        src="http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png"
+        alt=""
         id="icon"
       />
       <div class="float-left">

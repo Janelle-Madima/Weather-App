@@ -76,19 +76,19 @@ function displayWeatherCondition(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png`
   );
 }
 
 function searchCurrentCity(city) {
-  let apiKey = "46d4b1d6f90b68211c09b44671cd24f2";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiKey = "0a67b3414ce60t375c8b0o92fa83e7a7";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
 function searchPosition(position) {
-  let apiKey = "cc66f0f5ce4fc1dc21b3f112a350636f";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  let apiKey = "0a67b3414ce60t375c8b0o92fa83e7a7";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
