@@ -52,10 +52,9 @@
       <h4>Last Updated: <span id="date"></span></h4>
       <h4 id="description">Rain</h4>
       <img
-        src="http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png"
-        alt=""
-        id="icon"
-      />
+      src=http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png
+      alt="" id="icon" />
+
       <div class="float-left">
         <strong id="temperature">19</strong>
         <span class="units">
