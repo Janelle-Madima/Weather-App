@@ -61,7 +61,7 @@ temperatureC.addEventListener("click", toCelcius);
 
 function displayWeatherCondition(response) {
   console.log(response.data);
-  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#city").innerHTML = response.data.city;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.temperature.current
   );
@@ -89,7 +89,7 @@ function searchCurrentCity(city) {
 
 function searchPosition(position) {
   let apiKey = "0a67b3414ce60t375c8b0o92fa83e7a7";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${position.coordinates.longitude}&lat=${position.coordinates.latitude}&key=${apiKey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${position.coords.longitude}&lat=${position.coords.latitude}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
@@ -100,5 +100,4 @@ function getCurrentLocation(event) {
 let currentLocation = document.querySelector("#current-button");
 
 currentLocation.addEventListener("click", getCurrentLocation);
-
-searchCity("Johannesburg");
+searchCurrentCity("Johannesburg");
