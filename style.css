@@ -11,7 +11,7 @@ body {
   border: solid;
   min-height: 120px;
   margin: 30px auto;
-  max-width: 700px;
+  max-width: 650px;
 }
 
 .container {
@@ -33,7 +33,7 @@ form {
 }
 form input {
   width: 100%;
-  max-width: 280px;
+  max-width: 300px;
   padding: 10px 15px;
   border: none;
   outline: none;
@@ -43,12 +43,16 @@ form input {
   font-weight: 300;
   transition: 0.2s ease-in-out;
 }
+.units a {
+  text-decoration: none;
+  color: antiquewhite;
+}
 .units {
   color: rgb(9, 9, 9);
   margin: auto;
   position: relative;
-  font-size: 20px;
-  top: -34px;
+  font-size: 24px;
+  top: -35px;
 }
 .float-left {
   font-size: 64px;
@@ -57,23 +61,32 @@ form input {
   color: antiquewhite;
   text-align: center;
 }
-
-.storm-icon {
-  font-size: 20px;
+.weather-forecast-temperatures {
+  font-size: 13px;
   color: whitesmoke;
   border-radius: 44px;
+  text-align: center;
+}
+.weather-forecast-temp-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: whitesmoke;
+  font-size: 16px;
+  opacity: 0.5;
   text-align: center;
   padding: 15px;
   height: fit-content;
   width: fit-content;
-  margin: 10px 5px;
 }
 ul {
   text-align: left;
   font-weight: lighter;
   color: white;
 }
-.rainy-icon {
+.weather-forecast {
   font-size: 20px;
   color: whitesmoke;
   border-radius: 44px;
@@ -104,7 +117,7 @@ hr {
 }
 .btn {
   width: 100%;
-  max-width: 150px;
+  max-width: 120px;
   padding: 10px 15px;
   border: none;
   outline: none;
@@ -123,7 +136,7 @@ hr {
 }
 .current-location {
   width: 100%;
-  max-width: 120px;
+  max-width: 100px;
   padding: 10px 15px;
   border: none;
   outline: none;
