@@ -115,7 +115,6 @@ let temperatureC = document.querySelector("#celsius-link");
 temperatureC.addEventListener("click", toCelcius);
 
 function displayWeatherCondition(response) {
-  console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.city;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.temperature.current
